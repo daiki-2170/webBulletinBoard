@@ -1,0 +1,19 @@
+{
+  "name": "webbulletinboard",
+  "version": "1.0.0",
+  "description": "登録型チャット掲示板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:app": "npm run dev -w @webbulletinboard/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-sub:daiki-2170/webBulletinBoard.git"
+  },
+  "author": "daiki segawa",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ]
+}

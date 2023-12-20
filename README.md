@@ -1,4 +1,4 @@
-# webChatApp
+# webBulletinBoard
 
 登録型チャット掲示板
 
