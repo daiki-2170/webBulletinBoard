@@ -1,7 +1,15 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import path from "path";
 
-// https://vitejs.dev/config/
+// このモジュールのファイルパスを取得する
+const filePath = new URL(import.meta.url).pathname;
+
+// パスの文字列からファイルパスを取得する
+const __dirname = decodeURIComponent(filePath);
+
+console.log(__dirname);
+
 export default defineConfig({
   plugins: [vue()],
   server: {
@@ -13,6 +21,11 @@ export default defineConfig({
       scss: {
         additionalData: `@import "@/styles/variables.scss";`,
       },
+    },
+  },
+  resolve: {
+    alias: {
+      "src/": path.resolve(__dirname, "./src"),
     },
   },
 });
