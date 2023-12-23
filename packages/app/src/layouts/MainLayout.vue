@@ -1,15 +1,15 @@
 <template>
   <div class="main-layout">
-    {{ "preview" }}
+    {{ 'preview' }}
   </div>
 </template>
 
 <script setup lang="ts">
-import { useRouter } from "vue-router";
-import { ref, watch } from "vue";
+import { useRouter } from 'vue-router';
+import { ref, watch } from 'vue';
 
 const router = useRouter();
-const now = ref("");
+const now = ref('');
 </script>
 
 <style lang="sass" scoped>
