@@ -16,7 +16,7 @@
     /* setting alias */
     "baseUrl": "./",
     "paths": {
-      "src/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
 
     /* Linting */

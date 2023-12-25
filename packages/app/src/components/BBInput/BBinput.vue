@@ -12,15 +12,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const password = ref('');
-const showPassword = ref(false);
+const password = ref('')
+const showPassword = ref(false)
 
 const handleInput = () => {
   // ここでパスワードを表示するかどうかのロジックを追加できます
-  showPassword.value = password.value.length > 0;
-};
+  showPassword.value = password.value.length > 0
+}
 </script>
 
 <style lang="sass" scoped>

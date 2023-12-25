@@ -1,16 +1,10 @@
 <template>
   <div class="main-layout">
-    {{ 'preview' }}
+    <router-view />
   </div>
 </template>
 
-<script setup lang="ts">
-import { useRouter } from 'vue-router';
-import { ref, watch } from 'vue';
-
-const router = useRouter();
-const now = ref('');
-</script>
+<script setup lang="ts"></script>
 
 <style lang="sass" scoped>
 .main-layout
